@@ -25,7 +25,7 @@ def shrani(url, ime_datoteke, vsili_prenos=False):
     else:
         pripravi_imenik(ime_datoteke)
         with open(ime_datoteke, 'w') as datoteka:
-            datoteka.write(r.text)
+            datoteka.write(r.text.encode('ascii', 'ignore').decode('ascii'))
             print('shranjeno!')
 
 
