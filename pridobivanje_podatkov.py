@@ -14,5 +14,12 @@ for datoteka in orodja.datoteke('strani_seznamov_projektov/'):
 	for naslov in re.finditer(r'<a href="/projects/(?P<spletni_naslov>.+)\?ref=most_funded" target=""',vsebina):
 		spletni_naslovi_projektov.add(naslov.groupdict()['spletni_naslov'])
 
-print (spletni_naslovi_projektov)
-print (len(spletni_naslovi_projektov))
+print(spletni_naslovi_projektov)
+
+stevec=1
+for naslov in spletni_naslovi_projektov:
+	glavni_naslov='https://www.kickstarter.com/projects/'
+	polni_naslov='{}{}'.format(glavni_naslov,naslov)
+	ime_datoteke = 'strani_projektov/{:02}.html'.format(stevec)
+	orodja.shrani(polni_naslov,ime_datoteke)
+	stevec+=1
