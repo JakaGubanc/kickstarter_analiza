@@ -27,7 +27,9 @@ regex=re.compile(
 	r'<a class="hero__link" href="/projects/.+?>(?P<naslov>.*?)</a>.*?'
 	r'Created by.+?<a class="js-update-text-color" href="/projects/.+?>(?P<avtor>.*?)</a>.*?'
 #	r'<span bind-event-blur="inlineEditExit(&#39;blurb&#39;)".+?blurb">(?P<opis>.*?)</span>.*?'
-	r'<b>(?P<st_backerjev>.*?) backers</b>'
+	r'<b>(?P<st_backerjev>.*?) backers</b>.*?'
+#	r'location"></span>(?P<mesto>.*?), (?P<drzava>1.*?)</a>.*?'
+#	r'icon__tag"></span>(?P<kategorija.*?>)</a>.*?'
 	,
 	flags=re.DOTALL
 
