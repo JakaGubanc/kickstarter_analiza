@@ -16,4 +16,3 @@ for naslov in spletni_naslovi_projektov:
  	orodja.shrani(polni_naslov,ime_datoteke)
  	stevec+=1
 
-

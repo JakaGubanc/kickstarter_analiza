@@ -1,11 +1,11 @@
 import re
 import orodja
 
-# for stran in range(1,101):
-# 	naslov_glavni = 'https://www.kickstarter.com/discover/advanced?&sort=end_date'
-# 	polni_naslov='{}&page={}'.format(naslov_glavni,stran)
-# 	ime_datoteke = 'strani_seznamov_projektov/{:02}.html'.format(stran)
-# 	orodja.shrani(polni_naslov,ime_datoteke)
+for stran in range(1,101):
+ 	naslov_glavni = 'https://www.kickstarter.com/discover/advanced?&sort=end_date'
+ 	polni_naslov='{}&page={}'.format(naslov_glavni,stran)
+ 	ime_datoteke = 'strani_seznamov_projektov/{:02}.html'.format(stran)
+ 	orodja.shrani(polni_naslov,ime_datoteke)
 
 spletni_naslovi_projektov=set()
 for datoteka in orodja.datoteke('strani_seznamov_projektov/'):
