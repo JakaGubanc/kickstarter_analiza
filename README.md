@@ -5,7 +5,7 @@ Iz spletne strani *https://www.kickstarter.com/discover/advanced?&sort=end_date*
 ##Zajeti podatki
 + Naslov
 + Avtor
-+ Drzava
++ Država
 + Kategorija
 + Število backerjev
 + Cilj
@@ -18,4 +18,4 @@ Iz spletne strani *https://www.kickstarter.com/discover/advanced?&sort=end_date*
 + najbolj zastopane drzave in kategorije
 + najbolj uspešne drzave in kategorije
 + vplivanje cilja na uspešnost
-+ povprečna vičina cilja po kategorijah
++ povprečna višina cilja po kategorijah
